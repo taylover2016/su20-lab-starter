@@ -155,8 +155,24 @@ end TCL_Generic;
     <a name="clabelfont" val="SansSerif bold 16"/>
     <a name="circuitnamedbox" val="true"/>
     <a name="circuitvhdlpath" val=""/>
-    <wire from="(490,240)" to="(500,240)"/>
-    <wire from="(490,290)" to="(500,290)"/>
+    <wire from="(80,210)" to="(300,210)"/>
+    <wire from="(270,270)" to="(300,270)"/>
+    <wire from="(80,300)" to="(80,370)"/>
+    <wire from="(450,290)" to="(500,290)"/>
+    <wire from="(80,210)" to="(80,260)"/>
+    <wire from="(180,260)" to="(190,260)"/>
+    <wire from="(220,280)" to="(230,280)"/>
+    <wire from="(120,300)" to="(130,300)"/>
+    <wire from="(80,300)" to="(120,300)"/>
+    <wire from="(80,260)" to="(120,260)"/>
+    <wire from="(190,260)" to="(190,350)"/>
+    <wire from="(300,210)" to="(300,240)"/>
+    <wire from="(300,240)" to="(300,270)"/>
+    <wire from="(450,290)" to="(450,350)"/>
+    <wire from="(190,260)" to="(230,260)"/>
+    <wire from="(300,240)" to="(500,240)"/>
+    <wire from="(220,280)" to="(220,310)"/>
+    <wire from="(190,350)" to="(450,350)"/>
     <comp lib="0" loc="(500,240)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -173,6 +189,14 @@ end TCL_Generic;
     </comp>
     <comp lib="8" loc="(408,169)" name="Text">
       <a name="text" val="PUT CIRCUITRY HERE"/>
+    </comp>
+    <comp lib="4" loc="(120,230)" name="Register"/>
+    <comp lib="0" loc="(80,370)" name="Clock">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="3" loc="(270,270)" name="Adder"/>
+    <comp lib="0" loc="(220,310)" name="Constant">
+      <a name="width" val="8"/>
     </comp>
   </circuit>
 </project>
