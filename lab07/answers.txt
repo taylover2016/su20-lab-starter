@@ -10,7 +10,7 @@ Exercise 1
 		3.
 		4.
 		5.
-
+		Question: in-order and reversed-order, back and forth
 	Scenario 3
 		1.
 		2.
