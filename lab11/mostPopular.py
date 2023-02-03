@@ -26,9 +26,10 @@ def mostPopular(file_name, output="spark-wc-out-mostPopular"):
 
     counts = file.flatMap(splitDocument) \
                  .map(toPairs) \
-                 .reduceByKey(sumCounts) 
-                 # TODO: add appropriate extra transformations here
-
+                 .reduceByKey(sumCounts) \
+                 .map(lambda pair: (pair[1], pair[0])) \
+                 .sortByKey(False)
+    
     """ Takes the dataset stored in counts and writes everything out to OUTPUT """
     counts.coalesce(1).saveAsTextFile(output)
 
